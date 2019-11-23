@@ -8,22 +8,25 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" method="post" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1"  name="liczba1" runat="server"></asp:TextBox>
             <asp:DropDownList ID="DropDownList1" runat="server">
                 <asp:ListItem>+</asp:ListItem>
                 <asp:ListItem>-</asp:ListItem>
                 <asp:ListItem>*</asp:ListItem>
                 <asp:ListItem>/</asp:ListItem>
             </asp:DropDownList>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" name="liczba2" runat="server"></asp:TextBox>
             <asp:Label ID="Label1" runat="server" Text="="></asp:Label>
+            <asp:Label ID="Label4" runat="server" Visible="False"></asp:Label>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Oblicz" />
-            <asp:Button ID="Button2" runat="server" Text="Wyczyść" />
+            <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Underline="False" ForeColor="#FF0066" Text="Komunikat"></asp:Label>
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Oblicz" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Wyczyść" OnClick="Button2_Click" />
         </div>
     </form>
 </body>
