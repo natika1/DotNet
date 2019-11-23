@@ -1,2 +1,2 @@
 # DotNet
-do synchronizacji projetkót dotnet
+do synchronizacji projektów dotnet
